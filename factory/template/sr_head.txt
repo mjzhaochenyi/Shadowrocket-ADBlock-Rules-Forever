@@ -6,7 +6,8 @@
 # 本文件为修改版（fork），相对上游仅有一处改动：
 #   bypass-tun 中移除了 100.64.0.0/10（Tailscale 的 CGNAT 网段）。
 #   保留该段会让 Shadowrocket 把 Tailscale 流量指向物理网关，导致 Tailscale
-#   在开启 Shadowrocket 时完全无法连接（Shadowrocket 2.2.92 起表现明显）。
+#   在开启 Shadowrocket 时完全无法连接。
+#   参见上游 issue #566（已被关闭为 not planned）。
 # 上游：https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever
 # 上游作者：Moshel and Johnshall，许可：CC BY-SA 4.0
 # 本修改版同样以 CC BY-SA 4.0 发布。
